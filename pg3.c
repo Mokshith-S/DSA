@@ -3,22 +3,22 @@
 #include<stdio.h>
 int n=0;
 int array[30];
-void bubblesort(int[]);
+void bubblesort(int[],int);
 
 int main()
 {
-int a[10],n,i,j,temp;
+int array[10],n,i,j,temp;
 printf("Enter the no.of elements:");
 scanf("%d",&n);
 printf("Enter the array elements:");
 for(i=0;i<n;i++)
-scanf("%d",&a[i]);
-bubblesort(array);
+scanf("%d",&array[i]);
+bubblesort(array,n);
 return 0;
 }
 
 
-void bubblesort(int array[])
+void bubblesort(int array[],int n)
 {
 for(int r=0;r<n-1;r++){
 for(int k=0;k<n-r-1;k++){
