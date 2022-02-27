@@ -5,6 +5,7 @@ char postfix[30];
 char stack[30];
 int top=-1;
 void inToPost(char[]);
+int precedence(char);
 void main(){
 printf("Enter infix expression:");
 scanf("%s",infix);
