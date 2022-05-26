@@ -39,7 +39,7 @@ void kruskal()
 	{
 		findMin();
 		edgewt=cost[v1][v2];
-		cost[v1][v2]=cost[v1][v2]=0;
+		cost[v1][v2]=cost[v2][v1]=0;
 		if(root[v1]!=root[v2])
 		{
 			printf("\n(%d%d)",v1,v2);
